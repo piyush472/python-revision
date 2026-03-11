@@ -3,8 +3,9 @@
 
 
 
-s=input("enter an string:")
+s = input("enter a string:")
+
 for i in s:
-    a=s.count(i) 
-    if a==1:
-        print(" first character that appears only once in the string:",i)
+    if s.count(i) == 1:
+        print("first non repeating character:", i)
+        break
