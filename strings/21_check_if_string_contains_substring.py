@@ -5,4 +5,4 @@ ano_str=input("enter an substring:")
 if ano_str in s:
     print(ano_str ,"is a substring of",s)
 else:
-     print("given another string is not a substring of string")
+     print(ano_str ,"is not a substring of",s)
