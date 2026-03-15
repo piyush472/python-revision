@@ -7,5 +7,10 @@ d = {
     "orange": 40,
     "grapes": 50
 }
-d.keys(),d.values()==d.values(),d.keys()
-print(d)
+
+new_d = {}
+
+for key, value in d.items():
+    new_d[value] = key
+
+print(new_d)
