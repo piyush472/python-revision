@@ -1,9 +1,13 @@
 ﻿# Question 25: Count upper and lower case
 # Write a function count_upper_lower(s) that returns number of uppercase and lowercase letters.
 def count_upper_lower(s):
-    # your code here (maybe return tuple or dict)
-    pass
+    upper=0
+    lower=0
+    for i in s:
+        if i.isupper():
+            upper+=1
+        elif i.islower():
+            lower+=1
+    return upper, lower
 
-if __name__ == "__main__":
-    # Test your function here
-    pass
+print(count_upper_lower("HeLLo WoRLd"))

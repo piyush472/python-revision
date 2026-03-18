@@ -2,9 +2,10 @@
 # Write a function flatten_list(lst) that converts a nested list into a single list.
 # Example: [[1,2],[3,4],[5]] → [1,2,3,4,5]
 def flatten_list(lst):
-    # your code here
-    pass
+    result=[]
+    for i in lst:
+        for j in i:
+            result.append(j)
+    return result
 
-if __name__ == "__main__":
-    # Test your function here
-    pass
+print(flatten_list([[1,2],[3,4],[5]]))
