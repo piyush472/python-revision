@@ -1,9 +1,12 @@
 ﻿# Question 16: Fibonacci sequence
 # Write a function fibonacci(n) that prints the first n Fibonacci numbers.
 def fibonacci(n):
-    # your code here
-    pass
+    a=0
+    b=1
+    for i in range(n):
+        print(a,end=" ")
+        c=a+b
+        a=b
+        b=c
 
-if __name__ == "__main__":
-    # Test your function here
-    pass
+fibonacci(10)

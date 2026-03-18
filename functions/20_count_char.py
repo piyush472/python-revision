@@ -1,9 +1,10 @@
 ﻿# Question 20: Count character occurrences
 # Write a function count_char(s, ch) that counts how many times a character appears in a string.
 def count_char(s, ch):
-    # your code here
-    pass
+    count=0
+    for i in s:
+        if i==ch:
+            count+=1
+    return count
 
-if __name__ == "__main__":
-    # Test your function here
-    pass
+print(count_char("hello world", "l"))
